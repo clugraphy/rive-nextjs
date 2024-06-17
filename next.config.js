@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  distDir: 'build',
+  // output: 'standalone',
   webpack: (
     config,
     { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
@@ -17,5 +19,6 @@ const nextConfig = {
     return config;
   },
 };
+
 
 module.exports = nextConfig;
